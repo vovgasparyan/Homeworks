@@ -9,9 +9,6 @@ Print out the result of the operation using System.out.println();
 Don't forget to take into consideration the case when user can provide incorrect data:
       for example user wants to divide by 0 or provides 'b' as an operation.
  */
-
-
-
 import java.util.Scanner;
 
 public class HomeworkNo3 {
@@ -55,5 +52,4 @@ public class HomeworkNo3 {
                 System.out.println("Invalid operator:\nEnter operator using \"a\" or \"s\" or \"m\" or \"d\"");
         }
     }
-
 }
