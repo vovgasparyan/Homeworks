@@ -21,25 +21,39 @@ public class HomeworkNo3 {
         Scanner inputValue = new Scanner(System.in);
 
         System.out.println("Enter first value");
-        int firstValue = inputValue.nextInt();
+        double firstValue = inputValue.nextInt();
 
         System.out.println("Enter operator using \"a\" or \"s\" or \"m\" or \"d\" chars\n a - add, s - subtract, " +
                 "m - multiply, d - divide");
-        char inputOperator = inputValue.next().charAt(0);
+        String inputOperator = inputValue.next();
 
         System.out.println("Enter second value");
-        int secondValue = inputValue.nextInt();
-
+        double secondValue = inputValue.nextInt();
+        double result;
         switch (inputOperator) {
-            case 'a':
-                int result = firstValue + secondValue;
-                System.out.println("result is " + result);
+            case "a":
+                result = firstValue + secondValue;
+                System.out.println("Result of add is " + result);
+                break;
+            case "s":
+                result = firstValue - secondValue;
+                System.out.println("Result of subtract is " + result);
+                break;
+            case "m":
+                result = firstValue * secondValue;
+                System.out.println("Result of multiply is " + result);
+                break;
+            case "d":
+                if (secondValue == 0) {
+                    System.out.println("Error divide on 0");
+                } else {
+                    result = firstValue / secondValue;
+                    System.out.println("Result of divide is " + result);
+                }
                 break;
             default:
-                System.out.println("Invalid operator: enter operator using \"a\" or \"s\" or \"m\" or \"d\" chars");
+                System.out.println("Invalid operator:\nEnter operator using \"a\" or \"s\" or \"m\" or \"d\"");
         }
-        // остановился на плюсе
-
     }
 
 }
