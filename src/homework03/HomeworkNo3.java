@@ -18,14 +18,14 @@ public class HomeworkNo3 {
         Scanner inputValue = new Scanner(System.in);
 
         System.out.println("Enter first value");
-        double firstValue = inputValue.nextInt();
+        double firstValue = inputValue.nextDouble();
 
         System.out.println("Enter operator using \"a\" or \"s\" or \"m\" or \"d\" chars\n a - add, s - subtract, " +
                 "m - multiply, d - divide");
         String inputOperator = inputValue.next();
 
         System.out.println("Enter second value");
-        double secondValue = inputValue.nextInt();
+        double secondValue = inputValue.nextDouble();
         double result;
         switch (inputOperator) {
             case "a":
