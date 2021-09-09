@@ -9,7 +9,6 @@ package homeworkNo3_2;
  */
 public class HomeworkNo3_2 {
     public static void main(String[] args) {
-
         int selectedFloor = Integer.parseInt(args[0]);
         switch (selectedFloor) {
             case 1:
