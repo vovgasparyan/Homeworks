@@ -9,7 +9,7 @@ public class HomeworkNo2 {
            b) First is smaller, c) They are equal
          */
         int a = 10;
-        int b = 10;
+        int b = 5;
         if (a > b)
             System.out.println("First is bigger");
         else if (a < b)
@@ -42,11 +42,11 @@ public class HomeworkNo2 {
          */
         boolean redIsHitFromBehind = true;
         boolean blackIsHitFromBehind= false;
-        if (redIsHitFromBehind == true && blackIsHitFromBehind == true || redIsHitFromBehind == false &&
-                blackIsHitFromBehind == false) {
+        if (redIsHitFromBehind && blackIsHitFromBehind || !redIsHitFromBehind &&
+                !blackIsHitFromBehind) {
             System.out.println("Invalid state");
         }
-        else if (redIsHitFromBehind == true && blackIsHitFromBehind == false) {
+        else if (redIsHitFromBehind && !blackIsHitFromBehind) {
             System.out.println("The red car is guilty for the crash");
         }
         else {
