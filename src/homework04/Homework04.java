@@ -13,10 +13,10 @@ public class Homework04 {
 
         System.out.println("Enter the number:");
         int valueScan = inputScan.nextInt();
-        int i = 1;
+        int i = 0;
         int arithmetic = 0, inputNumCount = 0;
 
-        while (i < valueScan) {
+        while (i <= valueScan) {
             if (i % 2 == 0) {
                 arithmetic += i;
                 inputNumCount++;
@@ -33,9 +33,10 @@ public class Homework04 {
         int a = 16;
 
         for (int j = 0; j < a; j++) {
-            if (j % 3 != 0) {
-                System.out.println(j);
+            if (j % 3 == 0) {
+                continue;
             }
+            System.out.println(j);
         }
 
 
@@ -53,7 +54,7 @@ public class Homework04 {
             summaryOfNumbers += countFive;
             k++;
         }
-        while(k <= 5);
+        while (k <= 5);
         System.out.println("Summary of your entered numbers : " + summaryOfNumbers);
 
 

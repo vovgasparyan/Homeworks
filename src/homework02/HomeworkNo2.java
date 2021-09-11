@@ -21,15 +21,20 @@ public class HomeworkNo2 {
         /*
         2. Declare 3 char variables, print out the value of the variable which alphabetically comes the last.
          */
-        char letterR = 'R';
-        char letterT = 'T';
-        char letterV = 'V';
-        if (letterR > letterT) {
-            System.out.println("R is last from selected letters");
-        } else if (letterT > letterV) {
-            System.out.println("T is last from selected letters");
-        } else {
-            System.out.println("V is last from selected letters");
+        char let1 = 'X';
+        char let2 = 'A';
+        char let3 = 'V';
+        if (let1 > let2) {
+            if (let1 > let3) {
+                System.out.println(let1 + " is last from selected letters");
+            } else {
+                System.out.println(let3 + " is last from selected letters");
+            }
+        } else if(let2 > let3) {
+            System.out.println(let2 + " is last from selected letters");
+        }
+        else {
+            System.out.println(let3 + " is last from selected letters");
         }
         
 
@@ -42,15 +47,13 @@ public class HomeworkNo2 {
          */
         boolean redIsHitFromBehind = true;
         boolean blackIsHitFromBehind= false;
-        if (redIsHitFromBehind && blackIsHitFromBehind || !redIsHitFromBehind &&
-                !blackIsHitFromBehind) {
+        if(redIsHitFromBehind && !blackIsHitFromBehind) {
+            System.out.println("The black car is guilty for the crash");
+        } else if (!redIsHitFromBehind && blackIsHitFromBehind) {
+            System.out.println("The red car is guilty for the crash");
+        } else {
             System.out.println("Invalid state");
         }
-        else if (redIsHitFromBehind && !blackIsHitFromBehind) {
-            System.out.println("The red car is guilty for the crash");
-        }
-        else {
-            System.out.println("The black car is guilty for the crash");
-        }
+
     }
 }
