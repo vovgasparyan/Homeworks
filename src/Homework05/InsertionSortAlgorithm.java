@@ -30,7 +30,7 @@ public class InsertionSortAlgorithm {
         4) provide the implementation algorithm to sort the given array
          */
 
-                                             // comment about the purpose of code-chunk
+        // comment about the purpose of code-chunk
 
         int temp;                            // create a temporary variable
         int i = arr.length - 1;              // array length
