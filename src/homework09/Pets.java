@@ -6,4 +6,15 @@ public class Pets {
     protected int petAge;
     protected String petGender;
 
+    private boolean sold;
+    protected int incomeFromSoldPet;
+
+    public boolean isSold() {
+        return sold;
+    }
+
+    public void setSold(boolean sold, int income) {
+        this.incomeFromSoldPet += income;
+        this.sold = sold;
+    }
 }

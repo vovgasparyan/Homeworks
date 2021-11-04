@@ -29,15 +29,19 @@ public class PetStore extends PetSale {
             if (pet.petName == name) {
                 if (pet instanceof Cat) {
                     incomeFromSoldPet += ((Cat) pet).catPrice;
+                    whateverMethodAddsMoneyToIncome();
                 } else if (pet instanceof Dog) {
                     incomeFromSoldPet += ((Dog) pet).dogPrice;
+                    whateverMethodAddsMoneyToIncome();
                 } else if (pet instanceof GuineaPig) {
                     incomeFromSoldPet += ((GuineaPig) pet).guineaPigPrice;
+                    whateverMethodAddsMoneyToIncome();
                 } else if (pet instanceof Iguana) {
                     incomeFromSoldPet += ((Iguana) pet).iguanaPrice;
+                    whateverMethodAddsMoneyToIncome();
                 } else if (pet instanceof Mouse) {
-
                     incomeFromSoldPet += ((Mouse) pet).mousePrice;
+                    whateverMethodAddsMoneyToIncome();
                 }
                 this.pet.remove(pets);
             }
